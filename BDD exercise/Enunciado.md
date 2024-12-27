@@ -6,4 +6,5 @@ We would like you to define a testing Scenario to validate something you would c
 The expected deliveries for this exercise are:
 1. Feature file in Gherkin syntax that describes the testing scenario
 2. Step definitions implemented in Python for each step in your feature file
-3. Live demo! 
+3. Create a new branch with name EXERCISE_BDD and push that branch to the repository
+4. Live demo! 
