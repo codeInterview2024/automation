@@ -10,7 +10,7 @@ from hornets.models.credit_card.instances import VISA_EMV, MASTERCARD_MAGSTRIPE
 class TestPosPayItemWithCreditCard:
 
     @pytest.mark.parametrize("credit_card", [VISA_EMV, MASTERCARD_MAGSTRIPE])
-    def test_pay_with_credit_card(self, pos, get_item_from_caption, credit_card):
+    def test_pay_with_credit_card(self, pos, credit_card):
         pos.select_item(item="Item 7")
         transaction = pos.pay(Payment(CreditCardPaymentMethod(credit_card)))
 
