@@ -32,7 +32,7 @@ class Payment:
 class NoPayment(Payment):
 
     def __init__(self):
-        super().__init__(CashPaymentMethod())
+        super().__init__()
         self.payment_method = []
 
     def has_electronic_payment(self):
